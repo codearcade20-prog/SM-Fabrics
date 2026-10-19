@@ -1,0 +1,125 @@
+/* Loading Screen - Clean, Minimal & Premium */
+.loading-screen-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: #FAF7F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.5s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading-screen-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  padding: 2rem;
+}
+
+/* Logo Medallion with Subtle Pulse */
+.loading-logo-wrap {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-logo-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--color-burgundy-700, #7B1123);
+  border-right-color: var(--color-gold-400, #D4AF37);
+  animation: loading-spin 1.2s linear infinite;
+}
+
+.loading-logo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(123, 17, 35, 0.15);
+  animation: loading-pulse 2s ease-in-out infinite alternate;
+}
+
+/* Typography */
+.loading-title {
+  font-family: var(--font-display, 'Cinzel', serif);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-navy-900, #0B192C);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.loading-subtitle {
+  font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.76rem;
+  color: #64748B;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-top: -0.85rem;
+}
+
+/* Slim Modern Progress Bar */
+.loading-bar-track {
+  width: 150px;
+  height: 3px;
+  background: rgba(11, 25, 44, 0.08);
+  border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0.25rem;
+}
+
+.loading-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #7B1123, #D4AF37, #7B1123);
+  background-size: 200% 100%;
+  border-radius: 9999px;
+  animation: loading-fill 1.2s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes loading-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes loading-pulse {
+  0% { transform: scale(0.97); }
+  100% { transform: scale(1.03); }
+}
+
+@keyframes loading-fill {
+  0% {
+    width: 0%;
+    margin-left: 0;
+    background-position: 0% 50%;
+  }
+  50% {
+    width: 70%;
+    margin-left: 15%;
+    background-position: 100% 50%;
+  }
+  100% {
+    width: 100%;
+    margin-left: 100%;
+    background-position: 0% 50%;
+  }
+}
