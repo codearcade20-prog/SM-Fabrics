@@ -1,13 +1,15 @@
-/* About Us - Clean Split Grid */
 .about-clean-section {
   position: relative;
   border-bottom: 1px solid var(--border-light);
+  overflow: hidden;
 }
 
 .about-split-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  width: 100%;
+  min-width: 0;
 }
 
 @media (min-width: 992px) {
@@ -16,16 +18,44 @@
   }
 }
 
+.about-left-col {
+  width: 100%;
+  min-width: 0;
+}
+
+.about-right-col {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Completely hide Technical Filtration Media Capabilities in mobile/tablet view */
+@media (max-width: 991px) {
+  .about-right-col {
+    display: none !important;
+  }
+}
+
 .about-story-card {
   padding: 2.25rem 2rem;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .about-story-card {
+    padding: 1.5rem 1.15rem;
+  }
 }
 
 .story-title {
-  font-size: 1.45rem;
+  font-size: clamp(1.25rem, 5vw, 1.45rem);
   font-weight: 800;
   color: var(--color-navy-900);
   margin-bottom: 1rem;
   line-height: 1.25;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .story-text {
@@ -33,6 +63,8 @@
   color: var(--text-secondary);
   line-height: 1.65;
   margin-bottom: 1rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .credentials-pills-row {
@@ -41,9 +73,11 @@
   gap: 0.85rem;
   margin-top: 1.75rem;
   margin-bottom: 1.5rem;
+  width: 100%;
+  min-width: 0;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 640px) {
   .credentials-pills-row {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -57,6 +91,8 @@
   padding: 0.75rem;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .cred-icon {
@@ -75,6 +111,7 @@
   font-size: 0.82rem;
   color: var(--color-navy-900);
   font-weight: 700;
+  word-break: break-word;
 }
 
 
