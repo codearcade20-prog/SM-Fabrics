@@ -1,0 +1,237 @@
+/* Footer - Clean Modern Multi-Column (AgroLnk Style) */
+.footer-clean {
+  background-color: #050B14;
+  color: #F8FAFC;
+  padding-top: 4.5rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+@media (min-width: 640px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 0.9fr 1.3fr;
+    gap: 3rem;
+  }
+}
+
+/* Col 1 */
+.footer-brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.footer-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-brand-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+  display: block;
+}
+
+.footer-brand-tag {
+  font-size: 0.72rem;
+  color: var(--color-gold-400);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.footer-about-text {
+  font-size: 0.88rem;
+  color: #94A3B8;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.footer-gst-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  color: #E2E8F0;
+}
+
+.gst-shield {
+  color: var(--color-gold-400);
+}
+
+/* Titles & Lists */
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-link {
+  font-size: 0.86rem;
+  color: #94A3B8;
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  color: #FFFFFF;
+  padding-left: 3px;
+}
+
+/* Contact Col */
+.footer-contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-contact-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  color: #94A3B8;
+  line-height: 1.45;
+}
+
+.f-icon {
+  color: var(--color-gold-400);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.f-link {
+  color: #E2E8F0;
+  transition: var(--transition);
+}
+
+.f-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.f-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.f-phone-link {
+  color: #E2E8F0;
+  font-weight: 600;
+}
+
+.f-phone-link:hover {
+  color: var(--color-gold-400);
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright-text {
+  font-size: 0.825rem;
+  color: #64748B;
+  margin: 0;
+}
+
+.copyright-text strong {
+  color: #94A3B8;
+}
+
+.bottom-tagline {
+  font-size: 0.78rem;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.dot-sep {
+  opacity: 0.4;
+}
+
+.developer-credit {
+  font-size: 0.75rem;
+  color: #64748B;
+}
+
+.developer-link {
+  color: #94A3B8;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: var(--transition);
+}
+
+.developer-link:hover {
+  color: var(--color-gold-400);
+}
+
+.back-to-top-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #E2E8F0;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.back-to-top-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+}

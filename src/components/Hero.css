@@ -1,0 +1,311 @@
+/* Hero Section - Clean, Airy, AgroLnk-Inspired Layout */
+.hero-clean-section {
+  padding: 4.5rem 0 5rem 0;
+  background-color: #FFFFFF;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(123, 17, 35, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(11, 25, 44, 0.03) 0%, transparent 45%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.hero-clean-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .hero-clean-container {
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 4rem;
+  }
+}
+
+/* Left Content */
+.hero-left-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-badge-row {
+  margin-bottom: 1.25rem;
+}
+
+.badge-sep {
+  opacity: 0.5;
+  font-size: 0.75rem;
+}
+
+.hero-clean-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--color-navy-900);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .hero-clean-title {
+    font-size: 3.4rem;
+  }
+}
+
+.title-burgundy-accent {
+  color: var(--color-burgundy-700);
+}
+
+.hero-clean-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 580px;
+  margin-bottom: 2rem;
+}
+
+/* Button Group */
+.hero-clean-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.75rem;
+}
+
+.hero-primary-btn {
+  padding: 0.85rem 1.65rem;
+  font-size: 0.975rem;
+  border-radius: var(--radius-full);
+}
+
+.hero-secondary-btn {
+  padding: 0.85rem 1.5rem;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+}
+
+/* Metrics Row (AgroLnk 3-column stats row) */
+.hero-metrics-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+  flex-wrap: wrap;
+}
+
+.metric-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-val {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--color-navy-900);
+  line-height: 1.2;
+}
+
+.metric-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.metric-divider {
+  width: 1px;
+  height: 38px;
+  background-color: var(--border-light);
+}
+
+@media (max-width: 600px) {
+  .metric-divider {
+    display: none;
+  }
+  .hero-metrics-row {
+    gap: 1.25rem;
+  }
+  .metric-col {
+    width: 100%;
+  }
+}
+
+/* Right Column: Featured Spotlight Card */
+.hero-right-card-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-spec-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid #E2E8F0;
+  background: #FFFFFF;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
+}
+
+.spec-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  gap: 0.75rem;
+}
+
+.spec-card-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.spec-emblem-small {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.spec-emblem-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spec-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-navy-900);
+  line-height: 1.2;
+}
+
+.spec-card-loc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.spec-status-pill {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.65rem;
+}
+
+/* Media Box */
+.spec-card-media {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 210px;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border-light);
+}
+
+.spec-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spec-photo-tag {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  background: rgba(11, 25, 44, 0.9);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.spec-tag-icon {
+  color: var(--color-gold-400);
+}
+
+/* Spec Metrics Panel (AgroLnk Block Style) */
+.spec-metrics-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  background: #F8FAFC;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  margin-bottom: 1.25rem;
+}
+
+.spec-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-block-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.spec-block-value {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.text-green {
+  color: var(--color-burgundy-700);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.inline-icon {
+  color: var(--color-burgundy-600);
+}
+
+/* Action Bar */
+.spec-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1rem;
+  background: #0B192C;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+}
+
+.spec-proprietor-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-info-label {
+  font-size: 0.72rem;
+  color: var(--color-gold-400);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.spec-info-name {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.spec-cta-btn {
+  padding: 0.55rem 1.1rem;
+  font-size: 0.85rem;
+  border-radius: var(--radius-full);
+}

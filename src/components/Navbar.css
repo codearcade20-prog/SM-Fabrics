@@ -1,0 +1,227 @@
+/* Navbar - Clean Modern Floating Style (AgroLnk Inspired) */
+.navbar-header-clean {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  transition: all 0.25s ease;
+}
+
+.navbar-header-clean.scrolled {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08);
+}
+
+.navbar-inner-clean {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+}
+
+/* Brand Logo */
+.brand-logo-clean {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.logo-emblem-clean {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logo-img-clean {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-text-clean {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title-clean {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--color-navy-900);
+  line-height: 1.2;
+}
+
+.brand-sub-clean {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Desktop Pill Navigation (AgroLnk Style) */
+.desktop-nav-clean {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .desktop-nav-clean {
+    display: block;
+  }
+}
+
+.nav-pill-list {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+  background: #F8FAFC;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-light);
+}
+
+.nav-pill-link {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+}
+
+.nav-pill-link:hover {
+  color: var(--color-burgundy-700);
+  background: #FFFFFF;
+  box-shadow: var(--shadow-subtle);
+}
+
+/* Right Actions */
+.navbar-actions-clean {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.nav-quote-btn {
+  display: none;
+  border-radius: var(--radius-full);
+  padding: 0.6rem 1.25rem;
+  font-size: 0.88rem;
+}
+
+.btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.nav-quote-btn:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+@media (min-width: 640px) {
+  .nav-quote-btn {
+    display: inline-flex;
+  }
+}
+
+/* Mobile Toggle */
+.mobile-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.mobile-toggle-btn:hover {
+  background: var(--bg-secondary);
+  border-color: #CBD5E1;
+}
+
+@media (min-width: 960px) {
+  .mobile-toggle-btn {
+    display: none;
+  }
+}
+
+/* Mobile Drawer (Solid White, No Glassmorphism) */
+.mobile-drawer-clean {
+  display: block;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid var(--border-light);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.mobile-drawer-clean.open {
+  max-height: 440px;
+}
+
+.mobile-drawer-content {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.mobile-list-clean {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.mobile-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #F8FAFC;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.925rem;
+}
+
+.mobile-item-link:hover {
+  background: #EFF6FF;
+  border-color: #BFDBFE;
+  color: var(--color-navy-900);
+}
+
+.item-arrow {
+  color: var(--text-muted);
+}
+
+.mobile-drawer-buttons {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}

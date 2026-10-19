@@ -1,0 +1,121 @@
+/* TopBar - Clean & Professional Industrial Header */
+.topbar {
+  background-color: #FAF8F5;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  position: relative;
+  z-index: 50;
+}
+
+.topbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+
+
+.topbar-divider {
+  color: #CBD5E1;
+  font-size: 0.85rem;
+}
+
+.topbar-icon {
+  color: var(--color-burgundy-700);
+  flex-shrink: 0;
+}
+
+.topbar-proprietor {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.proprietor-label {
+  color: var(--text-muted);
+}
+
+.topbar-gst {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--text-secondary);
+  font-family: monospace;
+  font-size: 0.775rem;
+  background: #FFFFFF;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
+}
+
+.gst-label {
+  color: var(--color-gold-700);
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.topbar-phones {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.phone-label {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.topbar-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color var(--transition);
+}
+
+.topbar-phone-link:hover,
+.topbar-link:hover {
+  color: var(--color-burgundy-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.phone-sep {
+  color: #CBD5E1;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .topbar-inner {
+    justify-content: center;
+    text-align: center;
+  }
+  .topbar-left,
+  .topbar-right {
+    justify-content: center;
+    width: 100%;
+  }
+}

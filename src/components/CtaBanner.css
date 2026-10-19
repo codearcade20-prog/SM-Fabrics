@@ -1,0 +1,113 @@
+/* CTA Banner - AgroLnk Dark Rounded Contrast Card */
+.cta-banner-section {
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
+}
+
+.cta-contrast-card {
+  background: linear-gradient(135deg, #0B192C 0%, #152A4A 60%, #060E18 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(11, 25, 44, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-badge-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.cta-headline {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .cta-headline {
+    font-size: 2.85rem;
+  }
+}
+
+.cta-gold-accent {
+  color: var(--color-gold-400);
+}
+
+.cta-subtext {
+  font-size: 1.05rem;
+  color: #E2E8F0;
+  max-width: 680px;
+  margin: 0 auto 2.25rem auto;
+  line-height: 1.65;
+}
+
+.cta-subtext strong {
+  color: #FFFFFF;
+}
+
+.cta-actions-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.cta-main-btn {
+  padding: 0.85rem 1.75rem;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+}
+
+.cta-phone-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  padding: 0.85rem 1.65rem;
+  font-size: 0.95rem;
+  border-radius: var(--radius-full);
+}
+
+.cta-phone-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.cta-trust-chips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.75rem;
+}
+
+.trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #CBD5E1;
+  font-size: 0.825rem;
+  font-weight: 500;
+}
+
+.trust-icon {
+  color: var(--color-gold-400);
+}
+
+@media (max-width: 600px) {
+  .cta-contrast-card {
+    padding: 2.5rem 1.25rem;
+  }
+  .cta-break {
+    display: none;
+  }
+}
