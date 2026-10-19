@@ -68,6 +68,19 @@
   font-weight: 500;
 }
 
+@media (max-width: 440px) {
+  .brand-title-clean {
+    font-size: 0.98rem;
+  }
+  .brand-sub-clean {
+    font-size: 0.66rem;
+  }
+  .logo-emblem-clean {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 /* Desktop Pill Navigation (AgroLnk Style) */
 .desktop-nav-clean {
   display: none;

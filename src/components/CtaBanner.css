@@ -20,18 +20,13 @@
 }
 
 .cta-headline {
-  font-size: 2.2rem;
+  font-size: clamp(1.65rem, 5vw, 2.85rem);
   font-weight: 800;
   color: #FFFFFF;
   line-height: 1.2;
   letter-spacing: -0.02em;
   margin-bottom: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .cta-headline {
-    font-size: 2.85rem;
-  }
+  word-break: break-word;
 }
 
 .cta-gold-accent {
@@ -44,6 +39,7 @@
   max-width: 680px;
   margin: 0 auto 2.25rem auto;
   line-height: 1.65;
+  word-break: break-word;
 }
 
 .cta-subtext strong {
@@ -57,6 +53,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 2.5rem;
+  width: 100%;
 }
 
 .cta-main-btn {
@@ -97,17 +94,33 @@
   color: #CBD5E1;
   font-size: 0.825rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .trust-icon {
   color: var(--color-gold-400);
+  flex-shrink: 0;
 }
 
 @media (max-width: 600px) {
   .cta-contrast-card {
-    padding: 2.5rem 1.25rem;
+    padding: 2.25rem 1rem;
   }
   .cta-break {
     display: none;
+  }
+  .cta-actions-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cta-main-btn,
+  .cta-phone-btn {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+  }
+  .cta-trust-chips {
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }

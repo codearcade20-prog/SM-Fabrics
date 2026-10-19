@@ -113,13 +113,23 @@
 
 .matrix-table-wrap {
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   margin-bottom: 1.25rem;
+  max-width: 100%;
 }
 
 .matrix-table {
+  min-width: 440px;
   width: 100%;
   border-collapse: collapse;
   font-size: 0.825rem;
+}
+
+@media (max-width: 600px) {
+  .about-story-card,
+  .matrix-card {
+    padding: 1.5rem 1rem;
+  }
 }
 
 .matrix-table th {
