@@ -109,13 +109,7 @@
 }
 
 @media (max-width: 768px) {
-  .topbar-inner {
-    justify-content: center;
-    text-align: center;
-  }
-  .topbar-left,
-  .topbar-right {
-    justify-content: center;
-    width: 100%;
+  .topbar {
+    display: none !important;
   }
 }
