@@ -48,7 +48,7 @@ export default function Products() {
             Industrial Filtration Products
           </h2>
           <p className="clean-section-subtitle">
-            Directly manufactured and fabricated in Kodungaiyur, Chennai. 
+            Directly manufactured and fabricated in Kodungalyur - 600118, Chennai. 
             Select any category to view technical specifications and request an instant WhatsApp quote.
           </p>
         </div>

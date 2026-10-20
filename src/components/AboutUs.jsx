@@ -34,7 +34,7 @@ export default function AboutUs() {
             About SM Filter &amp; Fabric
           </h2>
           <p className="clean-section-subtitle">
-            Reliable industrial filtration manufacturing and custom fabric conversion based in Vyasarpadi / Kodungaiyur, Chennai.
+            Reliable industrial filtration manufacturing and custom fabric conversion based in Kodungalyur - 600118, Chennai.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function AboutUs() {
                   <MapPin size={18} className="cred-icon" />
                   <div>
                     <span className="cred-label">Factory Location</span>
-                    <strong className="cred-val">Kodungaiyur, Chennai</strong>
+                    <strong className="cred-val">Kodungalyur, Chennai - 600118</strong>
                   </div>
                 </div>
               </div>

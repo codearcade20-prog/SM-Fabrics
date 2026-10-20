@@ -40,7 +40,7 @@ export default function Hero() {
 
           {/* Subtext */}
           <p className="hero-clean-desc">
-            Direct factory manufacturer in Kodungaiyur, Chennai. Supplying high-tensile 
+            Direct factory manufacturer in Kodungalyur, Chennai. Supplying high-tensile 
             filter cloth, natural cotton canvas, laboratory filter paper, nonwoven needle felt, 
             and precision-stitched centrifuge &amp; baghouse bags across India.
           </p>
@@ -104,7 +104,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <h2 className="spec-card-title">SM Filter &amp; Fabric</h2>
-                  <span className="spec-card-loc">Kodungaiyur, Chennai - Vyasarpadi</span>
+                  <span className="spec-card-loc">Kodungalyur, Chennai - 600118</span>
                 </div>
               </div>
               <span className="pill-badge pill-badge-green spec-status-pill">

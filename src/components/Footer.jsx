@@ -81,9 +81,9 @@ export default function Footer() {
               <div className="footer-contact-line">
                 <Phone size={16} className="f-icon" />
                 <div className="f-phones">
-                  {COMPANY_INFO.phones.map((ph, idx) => (
+                  {COMPANY_INFO.phones.map((ph) => (
                     <a key={ph.raw} href={`tel:${ph.raw}`} className="f-phone-link">
-                      {ph.display}{idx < COMPANY_INFO.phones.length - 1 ? ', ' : ''}
+                      +91 {ph.display.replace('+91 ', '')}
                     </a>
                   ))}
                 </div>

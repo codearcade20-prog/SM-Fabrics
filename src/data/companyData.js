@@ -8,18 +8,19 @@ export const COMPANY_INFO = {
   gstNumber: "33QNMPS2045L1Z9",
   address: {
     line1: "No 8/242, 10th Main Road",
-    locality: "Kodungaiyur",
+    locality: "Kodungalyur",
     city: "Chennai",
-    postalCode: "600 039",
-    area: "Vyasarpadi",
+    postalCode: "600 118",
+    area: "Kodungalyur",
     state: "Tamil Nadu",
     country: "India",
-    full: "No 8/242, 10th Main Road, Kodungaiyur, Chennai - Vyasarpadi - 600 039"
+    full: "No 8/242, 10th Main Road, Kodungalyur, Chennai - 600 118"
   },
   phones: [
     { display: "63813 04145", raw: "+916381304145" },
     { display: "97910 09909", raw: "+919791009909" },
-    { display: "90801 04173", raw: "+919080104173" }
+    { display: "90801 04173", raw: "+919080104173" },
+    { display: "99413 92617", raw: "+919941392617" }
   ],
   whatsapp: {
     display: "99413 92617",
@@ -27,7 +28,7 @@ export const COMPANY_INFO = {
     clean: "919941392617"
   },
   email: "smfilterfabric@gmail.com",
-  mapsUrl: "https://maps.google.com/?q=No+8/242,+10th+Main+Road,+Kodungaiyur,+Chennai+-+Vyasarpadi+-+600039"
+  mapsUrl: "https://maps.google.com/?q=No+8/242,+10th+Main+Road,+Kodungalyur,+Chennai+-+600118"
 };
 
 export const CORE_PILLARS = [
