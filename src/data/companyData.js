@@ -4,7 +4,6 @@
 export const COMPANY_INFO = {
   name: "SM FILTER & FABRIC",
   legalName: "SM Filter & Fabric",
-  proprietor: "C. SELVARANI",
   gstNumber: "33QNMPS2045L1Z9",
   address: {
     line1: "No 8/242, 10th Main Road",
@@ -19,13 +18,12 @@ export const COMPANY_INFO = {
   phones: [
     { display: "63813 04145", raw: "+916381304145" },
     { display: "97910 09909", raw: "+919791009909" },
-    { display: "90801 04173", raw: "+919080104173" },
-    { display: "99413 92617", raw: "+919941392617" }
+    { display: "90801 04173", raw: "+919080104173" }
   ],
   whatsapp: {
-    display: "99413 92617",
-    raw: "+919941392617",
-    clean: "919941392617"
+    display: "63813 04145",
+    raw: "+916381304145",
+    clean: "916381304145"
   },
   email: "smfilterfabric@gmail.com",
   mapsUrl: "https://maps.google.com/?q=No+8/242,+10th+Main+Road,+Kodungalyur,+Chennai+-+600118"

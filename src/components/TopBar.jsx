@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, FileText, User } from 'lucide-react';
+import { Phone, Mail, FileText } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
 import './TopBar.css';
 
@@ -7,14 +7,8 @@ export default function TopBar() {
   return (
     <div className="topbar">
       <div className="container topbar-inner">
-        {/* Left: Proprietor & GST */}
+        {/* Left: GST Registration */}
         <div className="topbar-left">
-          <span className="topbar-proprietor">
-            <User size={13} className="topbar-icon" />
-            <span className="proprietor-label">Proprietor:</span> 
-            <strong>{COMPANY_INFO.proprietor}</strong>
-          </span>
-          <span className="topbar-divider">|</span>
           <span className="topbar-gst">
             <FileText size={13} className="topbar-icon" />
             <span className="gst-label">GST:</span> {COMPANY_INFO.gstNumber}

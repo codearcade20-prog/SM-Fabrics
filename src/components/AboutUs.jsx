@@ -2,7 +2,6 @@ import React from 'react';
 import { 
   Building2, 
   FileCheck, 
-  UserCheck, 
   MapPin, 
   CheckCircle, 
   ArrowRight,
@@ -50,21 +49,13 @@ export default function AboutUs() {
               <p className="story-text">
                 <strong>SM Filter &amp; Fabric</strong> is a specialized manufacturer and supplier of 
                 heavy-duty industrial filter fabrics, custom-stitched filter bags, and technical textiles. 
-                Under the leadership of Proprietor <strong>C. Selvarani</strong>, our workshop is equipped 
-                with precision sewing machinery, heat-slitting, and ring-crimping tools to produce exact 
-                machinery replacements for filter presses, baghouses, centrifuges, and fluid bed dryers.
+                Our workshop is equipped with precision sewing machinery, heat-slitting, and ring-crimping 
+                tools to produce exact machinery replacements for filter presses, baghouses, centrifuges, 
+                and fluid bed dryers.
               </p>
 
               {/* Verified Credentials Row */}
               <div className="credentials-pills-row">
-                <div className="cred-badge-item">
-                  <UserCheck size={18} className="cred-icon" />
-                  <div>
-                    <span className="cred-label">Proprietor</span>
-                    <strong className="cred-val">{COMPANY_INFO.proprietor}</strong>
-                  </div>
-                </div>
-
                 <div className="cred-badge-item">
                   <FileCheck size={18} className="cred-icon" />
                   <div>
