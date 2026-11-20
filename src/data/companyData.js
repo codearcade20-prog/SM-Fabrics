@@ -170,3 +170,27 @@ export const PRODUCTS_DATA = [
     bannerMatch: "Centrifuge Bags & FBD Bags"
   }
 ];
+
+// Downloadable PDF catalogues (files live in /public/catalogues)
+export const CATALOGUES = [
+  {
+    id: "catalogue-full",
+    title: "Full Catalogue",
+    pages: 12,
+    size: "5.7 MB",
+    file: "/catalogues/SM-Filter-Fabric-Catalogue-Full.pdf",
+    cover: "/catalogues/cover-full.jpg",
+    pagesDir: "/catalogues/full",
+    downloadName: "SM-Filter-and-Fabric-Product-Catalogue-Full.pdf"
+  },
+  {
+    id: "catalogue-compact",
+    title: "Compact Catalogue",
+    pages: 10,
+    size: "3.4 MB",
+    file: "/catalogues/SM-Filter-Fabric-Catalogue-Compact.pdf",
+    cover: "/catalogues/cover-compact.jpg",
+    pagesDir: "/catalogues/compact",
+    downloadName: "SM-Filter-and-Fabric-Product-Catalogue-Compact.pdf"
+  }
+];

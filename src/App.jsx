@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import WhyChooseUs from './components/WhyChooseUs';
 import Products from './components/Products';
+import Catalogues from './components/Catalogues';
 import AboutUs from './components/AboutUs';
 import CtaBanner from './components/CtaBanner';
 import Contact from './components/Contact';
@@ -20,6 +21,7 @@ function App() {
         <Hero />
         <WhyChooseUs />
         <Products />
+        <Catalogues />
         <AboutUs />
         <CtaBanner />
         <Contact />

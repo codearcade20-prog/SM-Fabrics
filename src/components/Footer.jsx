@@ -64,6 +64,7 @@ export default function Footer() {
               <li><a href="#hero" className="footer-link">Home</a></li>
               <li><a href="#about" className="footer-link">About Us &amp; Capabilities</a></li>
               <li><a href="#products" className="footer-link">Product Showcase</a></li>
+              <li><a href="#catalogues" className="footer-link">Download Catalogue (PDF)</a></li>
               <li><a href="#why-us" className="footer-link">Why Choose Us</a></li>
               <li><a href="#contact" className="footer-link">Contact &amp; Quotes</a></li>
             </ul>

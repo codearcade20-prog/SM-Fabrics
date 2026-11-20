@@ -1,0 +1,298 @@
+/* Catalogue Downloads - text left, covers right */
+.catalogues-section {
+  padding: 2.25rem 0;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.catalogues-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 980px;
+}
+
+.catalogues-heading {
+  max-width: 400px;
+}
+
+.catalogues-heading h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  margin-top: 0.75rem;
+}
+
+.catalogues-heading p {
+  font-size: 0.975rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.catalogue-list {
+  display: flex;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.catalogue-item {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+}
+
+.catalogue-item:hover {
+  border-color: var(--color-burgundy-700);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+/* Cover button */
+.catalogue-open {
+  position: relative;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.catalogue-cover {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 600 / 849;
+  object-fit: cover;
+}
+
+.catalogue-view-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 0.75rem;
+  transform: translate(-50%, 6px);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.9rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: var(--color-burgundy-700);
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.catalogue-item:hover .catalogue-view-hint,
+.catalogue-open:focus-visible .catalogue-view-hint {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* Touch devices: always show the View hint */
+@media (hover: none) {
+  .catalogue-view-hint {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Info row */
+.catalogue-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.6rem 0.65rem 0.9rem;
+}
+
+.catalogue-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  line-height: 1.3;
+  padding: 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.catalogue-text strong {
+  font-family: var(--font-display);
+  font-size: 0.925rem;
+  color: var(--text-primary);
+}
+
+.catalogue-text small {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.catalogue-dl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  color: var(--color-burgundy-700);
+  border-radius: var(--radius-sm);
+}
+
+.catalogue-dl:hover {
+  background: var(--color-burgundy-50);
+}
+
+/* ===== In-site Viewer ===== */
+.viewer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  background: rgba(5, 11, 20, 0.92);
+  animation: viewer-fade 0.2s ease;
+}
+
+@keyframes viewer-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.viewer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+  background: var(--color-navy-900);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+  flex-shrink: 0;
+}
+
+.viewer-title {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+.viewer-title strong {
+  font-family: var(--font-display);
+  color: #FFFFFF;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.viewer-title small {
+  color: #94A3B8;
+  font-size: 0.78rem;
+}
+
+.viewer-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.viewer-download {
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+}
+
+.viewer-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.viewer-close:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.viewer-pages {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 0.75rem 2rem;
+}
+
+.viewer-page {
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  aspect-ratio: 1100 / 1556;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 520px) {
+  .viewer-bar {
+    padding: 0.55rem 0.75rem;
+  }
+  .viewer-download span {
+    display: none;
+  }
+  .viewer-download {
+    padding: 0.55rem 0.7rem;
+  }
+  .viewer-pages {
+    gap: 0.6rem;
+    padding: 0.75rem 0.4rem 1.5rem;
+  }
+}
+@media (max-width: 760px) {
+  .catalogues-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+  .catalogues-heading {
+    max-width: none;
+    text-align: center;
+  }
+  .catalogue-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .catalogue-list {
+    gap: 0.85rem;
+  }
+  .catalogue-item {
+    width: calc(50% - 0.425rem);
+  }
+  .catalogue-info {
+    padding: 0.6rem 0.7rem;
+  }
+  .catalogue-text small {
+    font-size: 0.7rem;
+  }
+}
